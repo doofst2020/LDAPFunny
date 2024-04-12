@@ -3,7 +3,7 @@ from ldap3 import Server, Connection, ALL, SAFE_SYNC
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 #change based on your server
-server = Server('ldap://192.168.12.189:389')
+server = Server('ldap://10.1.1.5:389')
 #change based upon your server
 conn = Connection(server, 'CN=LDAP, CN=Users,DC=knight,DC=corp', 'BOCES10!', client_strategy=SAFE_SYNC, auto_bind=True)
 #this is how you specify the domain
